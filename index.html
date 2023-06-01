@@ -1,225 +1,62 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
 
-        <!-- ===== CSS ===== -->
-        <link rel="stylesheet" href="assets/css/styles.css">
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
 
-        <!-- ===== BOX ICONS ===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
 
-         <!--title-icon--------->
-        <link rel="shortcut icon" href="assets/img/white20.png">   
-        <title>Goggxi | Moh Rifkan</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Go<font color="#333333">gg</font>xi</a>
-                </div>
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/">
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Portofolio | Moh Rifkan">
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home" id="home">
-                <div class="home__container bd-grid">
-                    <h1 class="home__title"><span>HI</span><br>GUYS.</h1>                    
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Goggxi">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-                    <div class="home__scroll">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
 
-                        <a href="https://drive.google.com/file/d/1EYdI5Qm17SDgEYZvBI0gfSE8Vmx5FVwi/view?usp=sharing" class="cv-btn" target="_blank">Download CV</a>
+  <title>Goggxi</title>
+  <link rel="manifest" href="manifest.json">
 
-                        <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scroll down</a>
-                    </div>
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    var serviceWorkerVersion = "752878603";
+  </script>
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="flutter.js" defer></script>
+</head>
 
-                    <img src="assets/img/gxx2.png" alt="" class="home__img">
-                </div>
-            </section>
-            
-            <!--===== ABOUT =====-->
-            <section class="about section" id="about">
-                <h2 class="section-title">About</h2>
+<body>
+  <script>
+    window.addEventListener('load', function (ev) {
+      // Download main.dart.js
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        },
+        onEntrypointLoaded: function (engineInitializer) {
+          engineInitializer.initializeEngine().then(function (appRunner) {
+            appRunner.runApp();
+          });
+        }
+      });
+    });
+  </script>
+</body>
 
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/gx.jpg" alt="">
-                    </div>
-
-                    <div>
-                        <h2 class="about__subtitle">I'am Moh Rifkan</h2>
-                        <span class="about__profession">Android Devs</span>
-                        <p class="about__text">Android developer passionate about IT. Fast-learner, adaptive, and collaborative in teams. Has some experience in Java and Kotlin to develop mobile applications such as consuming RESTFul API with Retrofit. I have several programming skills, such as Kotlin, Java, and Flutter. A person who likes challenges and traveling.</p>
-
-                        <div class="about__social">
-                            <a href="https://www.facebook.com/Rifkan.iphank" class="about__social-icon"><i class='bx bxl-facebook' ></i></a>
-                            <a href="https://twitter.com/moh_rifkan" class="about__social-icon"><i class='bx bxl-twitter' ></i></a>
-                            <a href="https://www.instagram.com/moh_rifkan/" class="about__social-icon"><i class='bx bxl-instagram' ></i></a>
-                            <a href="https://github.com/Goggxi" class="about__social-icon"><i class='bx bxl-github' ></i></a>
-                            <a href="https://www.linkedin.com/in/goggxi/" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">
-                    <div class="skills__box">
-                        <h3 class="skills__subtitle">Development</h3>
-                        <span class="skills__name">Java</span>
-                        <span class="skills__name">Kotlin</span>
-                        <span class="skills__name">Flutter</span>
-                        
-                        <h3 class="skills__subtitle">Design</h3>
-                        <span class="skills__name">Figma</span>
-                        <span class="skills__name">Corel Draw</span>
-                        <span class="skills__name">Photoshop</span>
-                    </div>
-
-                    <div class="skills__img">
-                        <img src="assets/img/skill.jpg" alt="">
-                    </div>
-                </div>
-            </section>
-
-            <!-- ===== PORTFOLIO =====
-            <section class="portfolio section" id="portfolio">
-                <h2 class="section-title">Portfolio</h2>
-
-                <div class="portfolio__container bd-grid">
-                    <div class="portfolio__img">
-                        <img src="assets/img/work1.jpg" alt="">
-
-                        <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
-                        </div>
-                    </div>
-                    <div class="portfolio__img">
-                        <img src="assets/img/work2.jpg" alt="">
-
-                        <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
-                        </div>
-                    </div>
-                    <div class="portfolio__img">
-                        <img src="assets/img/work3.jpg" alt="">
-
-                        <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
-                        </div>
-                    </div>
-                    <div class="portfolio__img">
-                        <img src="assets/img/work4.jpg" alt="">
-
-                        <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
-                        </div>
-                    </div>
-                    <div class="portfolio__img">
-                        <img src="assets/img/work5.jpg" alt="">
-
-                        <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
-                        </div>
-                    </div>
-                    <div class="portfolio__img">
-                        <img src="assets/img/work6.jpg" alt="">
-
-                        <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-
-                <div class="contact__container bd-grid">
-                    <div class="contact__info">
-                        <h3 class="contact__subtitle">EMAIL</h3>
-                        <span class="contact__text">goggxi@gmail.com</span>
-
-                        <h3 class="contact__subtitle">PHONE</h3>
-                        <span class="contact__text">+62 -</span>
-
-                        <h3 class="contact__subtitle">ADDRESS</h3>
-                        <span class="contact__text">Kolonodale | Indonesia</span>
-                    </div>
-
-                    <form action="" class="contact__form">
-                        <div class="contact__inputs">
-                            <input type="text" placeholder="Name" class="contact__input">
-                            <input type="mail" placeholder="Email" class="contact__input">
-                        </div>
-
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-
-                        <input type="submit" value="Submit" class="contact__button">
-                    </form>
-                </div>
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer section">
-            <div class="footer__container bd-grid">
-                <div class="footer__data">
-                    <h2 class="footer__title">Go<font color="#FE3B00">gg</font>xi</h2>
-                    <p class="footer__text">I'm Moh Rifkan | personal website | 2021</p>
-                </div>
-
-                <div class="footer__data">
-                    <h2 class="footer__title">EXPLORE</h2>
-                    <ul>
-                        <li><a href="#home" class="footer__link">Home</a></li>
-                        <li><a href="#about" class="footer__link">About</a></li>
-                        <li><a href="#skills" class="footer__link">Skills</a></li>
-                        <li><a href="https://drive.google.com/file/d/1EYdI5Qm17SDgEYZvBI0gfSE8Vmx5FVwi/view?usp=sharing" class="footer__link"  target="_blank">Download CV</a></li>
-                        <li><a href="#Contact" class="footer__link">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer__data">
-                    <h2 class="footer__title">FOLLOW</h2>
-                    <a href="https://www.facebook.com/Rifkan.iphank" class="footer__social"><i class='bx bxl-facebook' ></i></a>
-                    <a href="https://twitter.com/moh_rifkan" class="footer__social"><i class='bx bxl-twitter' ></i></a>
-                    <a href="https://www.instagram.com/moh_rifkan/" class="footer__social"><i class='bx bxl-instagram' ></i></a>
-                    <a href="https://github.com/Goggxi" class="footer__social"><i class='bx bxl-github' ></i></a>
-                    <a href="https://www.linkedin.com/in/goggxi/" class="footer__social"><i class='bx bxl-linkedin' ></i></a>
-                </div>
-
-
-            </div>
-        </footer>
-
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
-
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
 </html>
-
-<!-- $ git push -u origin main -->
